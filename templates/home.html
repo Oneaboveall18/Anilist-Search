@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anilist Search Site</title>
+  <style>
+    body{
+      background-color: black;
+    }
+    h1{
+      text-align: center;
+      color: aqua;
+    }
+    .name{
+      text-align: center;
+      height: 100px;
+      padding: 20px;
+    }
+    .main-content{
+      margin: 0 auto;
+      text-align: center;
+    }
+    .main-content h1{
+      color: red;
+    }
+    .main-content p{
+      color: aqua;
+    }
+  </style>
+</head>
+<body>
+  <h1>Anilist Search Site</h1>
+  <div class="name">
+  <input class="animename" type="text" placeholder="Search..">
+  </div>
+  <div class="main-content">
+    <h1>{{animename_en}}</h1>
+    <br>
+    <img src={{animeimg}}>
+    <br>
+    <p>Japanese Name: {{animename_jp}} <br>
+      Runtime: {{runtime_start}} - {{runtime_end}} <br>
+      Format: {{format}} <br>
+      Status: {{status}} <br>
+      Episodes: {{episodes}} <br>
+      Season: {{season}} <br>
+      Score: {{score}} <br>
+      Genres: {{genres}} <br>
+      Description: {{description}}
+    </p>
+  </div>
+</body>
+</html>
