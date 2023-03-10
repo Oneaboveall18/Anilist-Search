@@ -24,9 +24,16 @@
     }
     .main-content h1{
       color: red;
+      font-size: 3.5rem;
     }
     .main-content p{
       color: aqua;
+      text-align: justify;
+      padding: 0px 20%;
+    }
+    .main-content p span{
+      color: red;
+      font-size: 20px;
     }
   </style>
 </head>
@@ -38,18 +45,31 @@
   <div class="main-content">
     <h1>{{animename_en}}</h1>
     <br>
-    <img src={{animeimg}}>
+    <div>
+      <img src={{animeimg}}>
+    </div>
     <br>
-    <p>Japanese Name: {{animename_jp}} <br>
-      Runtime: {{runtime_start}} - {{runtime_end}} <br>
-      Format: {{format}} <br>
-      Status: {{status}} <br>
-      Episodes: {{episodes}} <br>
-      Season: {{season}} <br>
-      Score: {{score}} <br>
-      Genres: {{genres}} <br>
-      Description: {{description}}
+    <p>Japanese Name: <span>{{animename_jp}}</span> <br>
+      <br>
+      Runtime: <span>{{runtime_start}} - {{runtime_end}}</span> <br>
+      <br>
+      Format: <span>{{format}}</span> <br>
+      <br>
+      Status: <span>{{status}}</span> <br>
+      <br>
+      Episodes: <span>{{episodes}}</span> <br>
+      <br>
+      Season: <span>{{season}}</span> <br>
+      <br>
+      Score: <span>{{score}}</span> <br>
+      <br>
+      Genres: <span>{{genres}}</span> <br>
+      <br>
+      Description: <br><br> <span>{{description}}</span>
     </p>
   </div>
+  <script>
+    let searchedName = document.querySelector('.animename');
+  </script>
 </body>
 </html>
